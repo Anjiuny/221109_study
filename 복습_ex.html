@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // {
+        // const arr17 = [100, 300, 400, 500, 200];
+
+        // let max = 0;    //최댓값 설정
+
+        // for(let i = 0; i < arr17.length; i++){
+        //     if(max < arr17[i]){
+        //         max = arr17[i]; // i의 값이 총 5번 변함
+        //     }
+        // } 
+        // document.write (max);
+        // }
+        {
+            const arr8 = [100, 200, 300, 400, 500];
+            
+            document.write('*********** 11. 배열 불러오기 ***********<br>');
+            //arr8. forEach(function(){}); => this 불러오기 가능
+            //arr8. forEach(()=>{}); => this 불러올 수 없음 / 익명함수를 보내는 함수(대체제)
+            arr8.forEach(function(element){
+                document.write(element, '<br>');
+            });
+                
+            document.write('*********** 11-1. 배열 불러오기 ***********<br>');
+            arr8.forEach(function(element, index, array){
+                document.write(element, '<br>');
+                document.write(index, '<br>');
+                document.write(array, '<br>');
+            });
+
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>
